@@ -1,0 +1,19 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	display: grid;
+	width:80%;
+	height: 100vh;
+	background: blue;
+}
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
