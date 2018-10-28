@@ -19,4 +19,35 @@ function showSlides() {
 
 //Add a button and collapsable description to your portfolio projects so when the user clicks the button the descriptions expand and collapse
 
+const expdesc = document.getElementsByClassName("expandabledesc");
+const i;
+
+for (i = 0; i < expdesc.length; i++) {
+  expdesc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    const content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
 //Create a modal box that pops up with your bio information whenever a button or link is pressed
+const modal = document.querySelector(".modal");
+    const trigger = document.querySelector(".trigger");
+    const closeButton = document.querySelector(".close-button");
+
+    function toggleModal() {
+        modal.classList.toggle("show-modal");
+    }
+
+    function windowOnClick(event) {
+        if (event.target === modal) {
+            toggleModal();
+        }
+    }
+
+    trigger.addEventListener("click", toggleModal);
+    closeButton.addEventListener("click", toggleModal);
+    window.addEventListener("click", windowOnClick);
