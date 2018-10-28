@@ -6,62 +6,98 @@
    	<link rel="stylesheet" type="text/css"  href="./css/Style.css">
 </head>
 <body>
-<div class="container">	
-<header>
-	<section>
-		<article>
-			<h1>This is my portfolio page</h1>
-		</article>
-	</section>
-</header>
-<main>
-	<section class="section__top">
-		<h2>Joseph E Rudy</h2>
-		<ul>
-			<H4>Go to... </h4>
-    		<li><a href="#aboutMe">About me</a></li>
-    		<li><a href="#projects">Projects</a></li>
-   		</ul>
-	</section>
-	<section class="section__aboutme" id="aboutMe">
-		<h2>About Me </h2>
-			<p>I am an IT professional.</p>
+
+<div class="container">
+
+		<header>
+			<section>
+				<article>
+					<h1>This is my portfolio page</h1>
+				</article>
+			</section>
+		</header>
+
+	<main>
+		<section class="section__top">
+			<h2>Joseph E Rudy</h2>
+			<ul>
+				<H4>Go to... </h4>
+	    		<li><a href="#aboutMe">About me</a></li>
+	    		<li><a href="#projects">Projects</a></li>
+	   		</ul>
+		</section>
+
+		<section class="section__aboutme" id="aboutMe">
+			<h2>About Me </h2>
+				<p>I am an IT professional.</p>
+				<article>
+				<img src="./images/thumbnail.jpg" alt="Photo of Joe">
+				</article>
+				<p>Send me an e-mail at joe.e.rudy@gmail.com</p>
+				<h3> Links to My Professional Sites</h3>
+				<a href="https://www.linkedin.com/in/joerudy">LinkedIn   </a>
+	        	<a href="https://github.com/jr4boc01">GitHub  </a>
+	        	<p> I am a results-oriented professional returning to a career in Information Technology.  Able to successfully manage large, complex projects and adapt to rapidly and continuously changing environments.  Broad knowledge of application systems, technology infrastructure, business processes, and financial service industries including banking and insurance.  Proven ability to reduce cost, speed delivery and improve quality </p>
+		</section>
+
+		<section class="section__projects" id="projects">
+			<h2>My Projects </h2>
 			<article>
-			<img src="./images/thumbnail.jpg" alt="Photo of Joe">
+				<h3>Virtual Pet</h3>
+				<a href="https://github.com/jr4boc01/virtual-pet-AMOK">Virtual Pets</a>
+				<img src="./images/virtualpet.png">
+	        	<p> Skills used: Java, Loops </p>    
 			</article>
-			<p>Send me an e-mail at joe.e.rudy@gmail.com</p>
-			<h3> Links to My Professional Sites</h3>
-			<a href="https://www.linkedin.com/in/joerudy">LinkedIn   </a>
-        	<a href="https://github.com/jr4boc01">GitHub  </a>
-        	<p> I am a results-oriented professional returning to a career in Information Technology.  Able to successfully manage large, complex projects and adapt to rapidly and continuously changing environments.  Broad knowledge of application systems, technology infrastructure, business processes, and financial service industries including banking and insurance.  Proven ability to reduce cost, speed delivery and improve quality </p>
-	</section>
-	<section class="section__projects" id="projects">
-		<h2>My Projects </h2>
-		<article>
-			<h3>Virtual Pet</h3>
-			<a href="https://github.com/jr4boc01/virtual-pet-AMOK">Virtual Pets</a>
-			<img src="./images/virtualpet.png">
-        	<p> Skills used: Java, Loops </p>    
-		</article>
-		<article>
-			<h3>Student Roster</h3>
-			<a href="https://github.com/jr4boc01/student-roster">Student Roster</a>
-			<img src="./images/student.jpg">
-        	<p> Skills used: Java </p>
-        </article>
-        <article>
-			<h3>Fortune Teller</h3>
-			<a href="https://github.com/jr4boc01/fortune-teller">Fortune Teller</a>
-			<img src="./images/fortuneteller.jpg">
-        	<p> Skills used: Java, Other </p>
-        </article>
-	</section>
-</main>
-<footer class="footer">
-	<p> 2018 </p>
-</footer>	
+
+			<article>
+				<h3>Student Roster</h3>
+				<a href="https://github.com/jr4boc01/student-roster">Student Roster</a>
+				<img src="./images/student.jpg">
+	        	<p> Skills used: Java </p>
+	        </article>
+
+	        <article>
+				<h3>Fortune Teller</h3>
+				<a href="https://github.com/jr4boc01/fortune-teller">Fortune Teller</a>
+				<img src="./images/fortuneteller.jpg">
+	        	<p> Skills used: Java, Other </p>
+	        </article>
+		</section>
+
+<!-- Slideshow container -->
+	<div class="slideshow-container" id="slideshow stuff">
+
+	  <!-- Full-width images with number and caption text -->
+		  <div class="mySlides fade">
+			   		<img src="./images/fortuneteller.jpg" style="width:100%">
+			    <div class="text">Fortune Teller</div>
+		  </div>
+
+		  <div class="mySlides fade">
+			    	<img src="./images/student.jpg" style="width:100%">
+			    <div class="text">Students Project</div>
+		  </div>
+
+		  <div class="mySlides fade">
+			    	<img src="./images/virtualpet.png" style="width:100%">
+			    <div class="text">Virtual Pet</div>
+		  </div>
+	</div>
+
+	<br>
+		<!-- The dots/circles -->
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+	</br>
+
+	<footer class="footer">
+		<p> 2018 </p>
+	</footer>	
+	<script src="app.js"></script>
 </div>
-	<script src="/javascript/app.js"></script>
-	<script src="/javascript/dom.js"></script>
+</main>
 </body>
 </html>
